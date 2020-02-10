@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.fl{
+    float: left;
+}
+
+.fr{
+    float :right;
+}
+header h2{
+    color: teal;
+}
+
+a{
+    text-decoration: none;
+    padding: 2px;
+}
+nav a{
+    color:teal;
+    margin: 2px;
+}
+
+.navigation{
+    height: 40px;
+    background-color:lightblue;
+    opacity: 0.5;
+}
+.form-content{
+    
+    margin:100px auto;
+    border: solid black 2px;
+    height:600px;
+    width : 600px;
+    border-radius: 3px;
+}
+
+.form-content h1{
+    color: white;
+    padding: 20px;
+    background-color: blue;
+    
+}
+.business{
+    position: relative;
+    display: flex;
+    left: 80%;
+}
+form{
+    padding: 15px;
+    
+}
+#ip1{
+    padding: 10px;
+    border-radius: 3px;
+}
+
+#ip2{
+    padding: 20px;
+    border-radius: 2px;
+}
+.ip3{
+    width: 95%;
+    background-color:cyan;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#ip4{
+    padding: 7px;
+}
+.buton{
+    background-color: cyan;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    left:66%;
+    margin-top: 20px;
+}
