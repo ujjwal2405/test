@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function areaofCircle(){
+        var x=prompt("Enter The String");
+        if(x.split("").reverse("").join("")==x){
+            document.write("Palindrome");
+        }
+        else{
+            document.write("Not palindrome");
+        }
+    }
+</script>
+<body>
+    <div style="display: flex;justify-content: center;margin-top: 50px;">
+        <input type="button" onclick="areaofCircle()" value="Check">
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function listts(){
+   /*5(1) declared list of objects*/
+   let Employee=[{Name:'A',Age:20,Salary:15000,DOB:'24/05/1998'},
+                {Name:'B',Age:20,Salary:3900,DOB:'21/03/1998'},
+                {Name:'C',Age:21,Salary:9000,DOB:'21/03/1998'},
+                {Name:'D',Age:23,Salary:10000,DOB:'21/011/1997'},
+                {Name:'E',Age:22,Salary:500,DOB:'21/011/1997'}
+                ]
+  
+/*5(2)This method using loop */
+// for(i=0;i<Employee.length;i++){
+//     if(Employee[i].Salary>5000){
+//         rich.push(Employee[i]);
+//     }
+// }
+var rich = Employee.filter(function (e){
+    return e.Salary>5000
+});
+
+var poor = Employee.filter(function (e){
+    return e.Salary<1000 && e.Age>20
+});
+
+console.log(rich);
+
+
+for (i in poor){
+    poor[i].Salary=poor[i].Salary*5;
+}
+console.log(poor);
+
+var ageGroup={};
+
+for(i in Employee){
+if(ageGroup.hasOwnProperty(Employee[i].Age))
+{
+ageGroup[Employee[i].Age].push(Employee[i]);
+}else{
+ageGroup[Employee[i].Age]=[];
+ageGroup[Employee[i].Age].push(Employee[i])
+
+}
+
+}
+console.log(ageGroup);   
+    
+    }
+</script>
+<body>
+    <div style="display: flex;justify-content: center;margin-top: 50px;">
+        <input type="button" onclick="listts()" value="Check">
+    </div>
+</body>
+</html>
