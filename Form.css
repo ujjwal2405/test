@@ -1,0 +1,46 @@
+nav{
+	border-bottom:1px solid #1abc9c;
+
+}
+
+nav span{
+	color:#1abc9c;
+}
+
+.navbar a{
+	font-size:1.1em;
+	color:#1abc9c;
+	margin-right:20px;
+}
+
+.nav-link{
+	color:#1abc9c !important;
+	float: right !important;
+}
+.forum{
+    margin-top: 40px;
+    border-radius: 5px;
+    border: black solid;
+    padding: 0px;
+}
+
+.forum h5{
+    margin: 0px;
+    background-color: lightblue;
+    
+    padding: 15px;
+}
+.form-content{
+    padding: 13px;
+}
+
+select{
+    background-color: #1abc9c !important;
+    color:white !important;
+}
+.foots{
+    margin-top: 20px;
+}
+.sub-btn{
+background-color: #1abc9c;
+}
